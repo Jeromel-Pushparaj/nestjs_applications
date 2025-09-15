@@ -122,6 +122,11 @@ function App() {
     content = <p className="info-text">Loading sensor data...</p>;
   }
 
+useEffect(() => {
+  fetchSensors();
+  const interval = setInterval(fetchSensors, 5000);
+  return () => clearInterval(interval);
+}, [fetchSensors]);
 
   return (
     <div className="app-container">

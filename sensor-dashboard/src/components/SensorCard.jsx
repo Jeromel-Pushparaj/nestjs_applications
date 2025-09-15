@@ -25,6 +25,7 @@ const SensorCard = ({ sensor, onEdit, onDelete }) => {
         <div className="card-actions">
           <button onClick={onEdit} className="action-btn edit-btn">Edit</button>
           <button onClick={onDelete} className="action-btn delete-btn">Delete</button>
+          <span style={{fontSize:"10px"}}>id: {sensor.id}</span>
         </div>
       </div>
     </div>
