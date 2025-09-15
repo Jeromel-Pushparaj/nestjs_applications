@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import './App.css';
-import SensorCard from './SensorCard.jsx';
-import SensorModal from './SensorModal.jsx';
+import SensorCard from './components/SensorCard.jsx';
+import SensorModal from './components/SensorModal.jsx';
 
 // --- Main App Component ---
 function App() {
